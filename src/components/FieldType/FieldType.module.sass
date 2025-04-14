@@ -1,0 +1,21 @@
+@import 'styles'
+
+.container
+    @include element-flex(row,flex-start,center)
+    width: 100%
+    height: 48px
+    max-width: 420px
+    border-radius: $value-3
+    padding: 0 $value-3
+    outline: 0
+    background: $b2
+    border: 2px solid $b3
+    &:hover
+        cursor: pointer
+        border-color: $b5
+
+.text
+    color: $bw
+    +label-20
+    +m
+        +label-16

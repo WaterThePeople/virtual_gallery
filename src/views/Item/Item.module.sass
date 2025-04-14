@@ -1,0 +1,29 @@
+@import styles
+
+.container
+    width: 80%
+    height: 100%
+    @include element-flex(row, flex-start, flex-start)
+    margin-top: $value-16
+    margin-bottom: $value-16
+    gap: $value-8
+    box-sizing: border-box
+    padding: $value-8
+    background: $w2
+    border-radius: $value-3
+
+.text_container
+    @include element-flex(column)
+    gap: 0
+    width: 35%
+
+.title
+    color: $b
+    +title-30
+
+.description
+    color: $b8
+    +label-24
+
+.figure
+    width: calc(65% - $value-8)

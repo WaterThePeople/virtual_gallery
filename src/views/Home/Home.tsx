@@ -1,11 +1,17 @@
 import style from "./Home.module.sass";
-import ThreeDScene from "components/ThreeDScene/ThreeDScene";
+import List from "./List/List";
+import figures from "constants/Figures";
 
 function Home() {
   return (
     <div className={style.container}>
-        SIEMA TO JEST TEST HOME PAGE'U
-        <ThreeDScene/>
+      <div className={style.text_container}>
+        <div className={style.title}>Porcelain Figures</div>
+        <div className={style.subtitle}>
+          The list of Porcelain Figures on our site
+        </div>
+      </div>
+      <List array={figures} />
     </div>
   );
 }

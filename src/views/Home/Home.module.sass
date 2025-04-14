@@ -1,11 +1,25 @@
 @import styles
 
 .container
-    width: 100%
-    @include element-flex(column, flex-start, center)
-    gap: $value-32
+    width: 80%
+    height: 100%
+    @include element-flex(column, flex-start, flex-start)
+    margin-top: $value-16
+    margin-bottom: $value-16
+    gap: $value-8
     box-sizing: border-box
-    padding-bottom: $value-16
-    +m
-        gap: $value-10
-        padding-bottom: $value-5
+    padding: $value-8
+    background: $w2
+    border-radius: $value-3
+
+.text_container
+    @include element-flex(column)
+    gap: 0
+
+.title
+    color: $b
+    +title-30
+
+.subtitle
+    color: $b8
+    +label-24
