@@ -11,7 +11,7 @@ function ListItem({ item }: { item: any }) {
         src={
           item?.image
             ? item?.image
-            : process.env.PUBLIC_URL + "/placeholder.png"
+            : process.env.PUBLIC_URL + "/images/placeholder.png"
         }
         alt="Placeholder"
         className={style.image}
