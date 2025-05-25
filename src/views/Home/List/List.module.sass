@@ -2,5 +2,11 @@
 
 .container
     width: 100%
-    @include element-flex(column)
+    @include element-flex(row)
+    flex-wrap: wrap
     gap: $value-4
+
+.container_item
+    width: calc(50% - $value-2)
+    +b
+        width: 100%

@@ -6,20 +6,18 @@
     gap: $value-2
     height: 256px
     background: $w4
-    border: 4px solid $b9
+    border: 2px solid $bw
     border-radius: $value-4
     &:hover
         cursor: pointer
         background: $w8
-        border-color: $b7
-        .image
-            border-color: $b7
+        border-color: $b8
 
 .image
     width: 256px
     height: 100%
-    border-radius: $value-3 0 0 $value-3
-    border-right: 4px solid $b9
+    border-radius: $value-4 0 0 $value-4
+    border-right: 2px solid $bw
 
 .column_container
     flex: 1
@@ -33,6 +31,17 @@
     color: $b
     +title-24
     width: 100%
+
+.text
+    color: $b5
+    +label-22
+    width: 100%
+    @include element-flex(row)
+    gap: $value-2
+
+.text_important
+    color: $b
+    +label-22
 
 .description
     color: $b5

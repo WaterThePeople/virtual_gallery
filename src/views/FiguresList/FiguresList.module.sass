@@ -8,16 +8,13 @@
     margin-bottom: $value-16
     gap: $value-8
     box-sizing: border-box
-
-.figures
     padding: $value-8
     background: $w2
     border-radius: $value-3
 
 .text_container
-    @include element-flex(column,center,center)
+    @include element-flex(column)
     gap: 0
-    width: 100%
 
 .title
     color: $b
@@ -26,4 +23,8 @@
 .subtitle
     color: $b8
     +label-24
-    text-align: center
+
+.list
+    width: 100%
+    @include element-flex(column)
+    gap: $value-4

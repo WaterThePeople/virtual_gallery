@@ -11,16 +11,28 @@ function Item() {
   useEffect(() => {
     const selectedItem = figures.find((figure) => figure.id?.toString() === id);
     setItem(selectedItem || null);
-  }, []);
+  }, [id]);
 
   return (
     <div className={style.container}>
       <div className={style.text_container}>
-        <div className={style.title}>{item?.name}</div>
+        <div className={style.text_column}>
+          <div className={style.title}>{item?.name}</div>
+          <div className={style.text}>
+            Author: <div className={style.text_important}>{item?.author}</div>
+          </div>
+          <div className={style.text}>
+            Created in <div className={style.text_important}>{item?.date}</div>
+          </div>
+        </div>
         <div className={style.description}>{item?.description}</div>
       </div>
       <div className={style.figure}>
-        <ThreeDScene />
+        <ThreeDScene
+          modelName={item?.name ? item?.name : "empty"}
+          model={item?.model ? item?.model : ""}
+          download={item?.download ? item?.download : ""}
+        />
       </div>
     </div>
   );

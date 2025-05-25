@@ -1,0 +1,24 @@
+@import styles
+
+.container
+    width: 80%
+    height: 100%
+    @include element-flex(column, flex-start, flex-start)
+    margin-top: $value-16
+    margin-bottom: $value-16
+    gap: $value-8
+    box-sizing: border-box
+
+.text_container
+    @include element-flex(column,center,center)
+    gap: 0
+    width: 100%
+
+.title
+    color: $b
+    +title-32
+
+.subtitle
+    color: $b5
+    +label-28
+    text-align: center

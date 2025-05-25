@@ -1,8 +1,68 @@
 @import styles
 
 .container
-    background: $w5
+    height: 640px
+    width: 100%
+    @include element-flex(row)
+    gap: $value-4
+
+.options
+    width: 25%
+    height: 100%
+    background: $bw
     padding: $value-4
     border-radius: $value-4
-    height: 512px
+    @include element-flex(column, flex-start,center)
+    gap: $value-4
+
+.slider
     width: 100%
+    @include element-flex(row,flex-start,center)
+    gap: $value-2
+
+.slider_text
+    +label-18
+    color: $b
+    width: 40%
+    text-align: end
+
+.slider_input
+    width: 60%
+
+.view_presets
+    width: 100%
+    @include element-flex(row,flex-start,center)
+    gap: $value-2
+
+.view_presets_text
+    +label-18
+    color: $b
+    width: 30%
+    text-align: end
+
+.view_presets_buttons
+    width: 70%
+    @include element-flex(row,flex-start,center)
+    gap: $value-2
+
+.view_presets_button
+    +label-18
+    color: $b
+    background: $w9
+    padding-inline: $value-2
+    border-radius: $value-2
+    border: 3px solid $b5
+    &:hover
+        cursor: pointer
+        background-color: $w5
+
+.current_button
+    background-color: $b
+    color: $w !important
+
+.canvas
+    width: 75%
+    height: 100%
+    background: $bw
+    padding: $value-4
+    border-radius: $value-4

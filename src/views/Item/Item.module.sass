@@ -3,7 +3,7 @@
 .container
     width: 80%
     height: 100%
-    @include element-flex(row, flex-start, flex-start)
+    @include element-flex(column,flex-start,center)
     margin-top: $value-16
     margin-bottom: $value-16
     gap: $value-8
@@ -13,9 +13,13 @@
     border-radius: $value-3
 
 .text_container
+    @include element-flex(row,center,center)
+    gap: $value-2
+    width: 100%
+
+.text_column
     @include element-flex(column)
-    gap: 0
-    width: 35%
+    width: 30%
 
 .title
     color: $b
@@ -25,5 +29,16 @@
     color: $b8
     +label-24
 
+.text
+    color: $b5
+    +label-22
+    width: 100%
+    @include element-flex(row)
+    gap: $value-2
+
+.text_important
+    color: $b
+    +label-22
+
 .figure
-    width: calc(65% - $value-8)
+    width: 100%

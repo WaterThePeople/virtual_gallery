@@ -17,6 +17,7 @@
     padding-inline: $value-4
     border-bottom: solid 2px $b7
     top: 0
+    gap: $value-4
     height: 64px
     +m
         height: 48px
@@ -25,20 +26,22 @@
     @include element-flex(row, center, center)
     gap: $value-1
     background-color: transparent
+    border-radius: $value-2
+    padding: 2px 8px
     border: 0
-    padding: 0
     text-decoration: none
     &:hover
         cursor: pointer
+        background-color: $w9
 
 .image
-    width: 48px
-    height: 48px
+    width: 44px
+    height: 44px
     +m
-        width: 32px
-        height: 32px
+        width: 28px
+        height: 28px
 
-.text
+.text_logo
     color: $b
     font-size: 28px
     font-weight: 600
@@ -47,3 +50,34 @@
         font-size: 18px
         font-weight: 600
         font-style: normal
+
+.navigate
+    @include element-flex(row, center, center)
+    gap: $value-1
+    color: $b7
+    background-color: transparent
+    border: 0
+    padding: 0
+    text-decoration: none
+    &:hover
+        cursor: pointer
+
+.text
+    font-size: 28px
+    font-weight: 600
+    font-style: normal
+    &:hover
+        color: $b
+    +m
+        font-size: 18px
+        font-weight: 600
+        font-style: normal
+
+.separator
+    width: 1px
+    height: 80%
+    background: $b5
+
+.current
+    color: $b !important
+    text-decoration: underline

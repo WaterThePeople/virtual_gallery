@@ -1,7 +1,7 @@
-import style from "./ListItem.module.sass";
+import style from "./Figure.module.sass";
 import { useNavigate } from "react-router-dom";
 
-function ListItem({ item }: { item: any }) {
+function Figure({ item }: { item: any }) {
   const navigate = useNavigate();
 
   return (
@@ -20,10 +20,16 @@ function ListItem({ item }: { item: any }) {
       />
       <div className={style.column_container}>
         <div className={style.title}>{item?.name}</div>
+        <div className={style.text}>
+          Author: <div className={style.text_important}>{item?.author}</div>
+        </div>
+        <div className={style.text}>
+          Created in <div className={style.text_important}>{item?.date}</div>
+        </div>
         <div className={style.description}>{item?.description}</div>
       </div>
     </div>
   );
 }
 
-export default ListItem;
+export default Figure;
