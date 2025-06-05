@@ -46,8 +46,14 @@
 .description
     color: $b5
     +label-22
-    flex: 1
-    box-sizing: border-box
+    width: 100%
+    padding-right: $value-2
+    word-wrap: break-word
+    overflow-wrap: break-word
     overflow: hidden
     text-overflow: ellipsis
-    white-space: break-spaces
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    +m
+        -webkit-line-clamp: 3
+    -webkit-box-orient: vertical

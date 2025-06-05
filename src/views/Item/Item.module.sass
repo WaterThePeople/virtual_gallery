@@ -8,7 +8,7 @@
     margin-bottom: $value-16
     gap: $value-8
     box-sizing: border-box
-    padding: $value-8
+    padding: $value-4
     background: $w2
     border-radius: $value-3
 
@@ -16,29 +16,46 @@
     @include element-flex(row,center,center)
     gap: $value-2
     width: 100%
+    +m
+        @include element-flex(column,flex-start,center)
 
 .text_column
     @include element-flex(column)
-    width: 30%
+    width: 25%
+    min-width: 280px
+    +m
+        width: 100%
 
 .title
     color: $b
     +title-30
+    +m
+        +title-18
 
 .description
+    max-width: calc(100% - 296px)
+    flex: 1
+    height: 100%
     color: $b8
     +label-24
-
+    +m
+        width: 100%
+        max-width: 100%
+        +label-16
 .text
     color: $b5
     +label-22
     width: 100%
     @include element-flex(row)
     gap: $value-2
+    +m
+        +label-14
 
 .text_important
     color: $b
     +label-22
+    +m
+        +label-14
 
 .figure
     width: 100%

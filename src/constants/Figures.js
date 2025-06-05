@@ -36,8 +36,8 @@ const figures = [
     id: 4,
     name: "Woman",
     image: process.env.PUBLIC_URL + "/images/woman.jpg",
-    model: '/models/bird.glb',
-    download: '/download/bird.glb',
+    model: '/models/woman.glb',
+    download: '/download/woman.glb',
     author: "Will Smith",
     date: "2019-11-05",
     description:

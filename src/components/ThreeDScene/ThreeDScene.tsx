@@ -139,7 +139,7 @@ const ThreeDScene = ({
     <div className={style.container}>
       <div className={style.options}>
         <div className={style.slider}>
-          <div className={style.slider_text}>Background:</div>
+          <div className={style.slider_text}>Background</div>
           <input
             className={style.slider_input}
             type="range"
@@ -150,7 +150,7 @@ const ThreeDScene = ({
           />
         </div>
         <div className={style.slider}>
-          <div className={style.slider_text}>Zoom:</div>
+          <div className={style.slider_text}>Zoom</div>
           <input
             className={style.slider_input}
             type="range"
@@ -162,7 +162,7 @@ const ThreeDScene = ({
           />
         </div>
         <div className={style.slider}>
-          <div className={style.slider_text}>Ambient Light:</div>
+          <div className={style.slider_text}>Ambient Light</div>
           <input
             className={style.slider_input}
             type="range"
@@ -175,7 +175,7 @@ const ThreeDScene = ({
         </div>
 
         <div className={style.slider}>
-          <div className={style.slider_text}>Directional Light:</div>
+          <div className={style.slider_text}>Directional Light</div>
           <input
             className={style.slider_input}
             type="range"
@@ -187,7 +187,7 @@ const ThreeDScene = ({
           />
         </div>
         <div className={style.view_presets}>
-          <div className={style.view_presets_text}>View:</div>
+          <div className={style.view_presets_text}>View</div>
           <div className={style.view_presets_buttons}>
             <div
               className={style.view_presets_button}
@@ -210,7 +210,7 @@ const ThreeDScene = ({
           </div>
         </div>
         <div className={style.view_presets}>
-          <div className={style.view_presets_text}>Preset:</div>
+          <div className={style.view_presets_text}>Preset</div>
           <div className={style.view_presets_buttons}>
             <div
               className={cn(
@@ -242,7 +242,7 @@ const ThreeDScene = ({
           </div>
         </div>
         <div className={style.view_presets}>
-          <div className={style.view_presets_text}>Material:</div>
+          <div className={style.view_presets_text}>Material</div>
           <div className={style.view_presets_buttons}>
             <div
               className={cn(
