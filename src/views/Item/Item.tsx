@@ -32,6 +32,7 @@ function Item() {
           modelName={item?.name ? item?.name : "empty"}
           model={item?.model ? item?.model : ""}
           download={item?.download ? item?.download : ""}
+          scale={item?.scale ? item?.scale : 10}
         />
       </div>
     </div>

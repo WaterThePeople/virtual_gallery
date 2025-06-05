@@ -54,13 +54,15 @@ const ThreeDScene = ({
   model,
   download,
   modelName,
+  scale,
 }: {
   model: string;
   download: string;
   modelName: string;
+  scale: number;
 }) => {
   const [sliderValue, setSliderValue] = useState<number>(125);
-  const [zoom, setZoom] = useState<number>(3);
+  const [zoom, setZoom] = useState<number>(6);
   const [preset, setPreset] = useState<"sunset" | "city" | "forest">("sunset");
   const [materialMode, setMaterialMode] = useState<
     "shaded" | "wireframe" | "flat"
@@ -296,7 +298,7 @@ const ThreeDScene = ({
           />
           <Environment preset={preset} background={false} />
 
-          <ItemModel model={model} scale={10} materialMode={materialMode} />
+          <ItemModel model={model} scale={scale} materialMode={materialMode} />
 
           <Controls zoom={zoom} setZoom={setZoom} />
         </Canvas>
