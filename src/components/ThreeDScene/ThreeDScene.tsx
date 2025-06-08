@@ -275,7 +275,9 @@ const ThreeDScene = ({
             </div>
           </div>
         </div>
-        <DefaultButton onClick={downloadModel} text="Download Model" />
+        {download && (
+          <DefaultButton onClick={downloadModel} text="Download Model" />
+        )}
       </div>
 
       <div
